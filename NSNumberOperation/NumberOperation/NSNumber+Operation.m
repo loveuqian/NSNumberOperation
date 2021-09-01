@@ -134,9 +134,7 @@
             return nil;
     }
     // normal number
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
-    return [formatter numberFromString:string];
+    return [NSDecimalNumber decimalNumberWithString:string];
 }
 
 @end
